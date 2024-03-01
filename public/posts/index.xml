@@ -1,27 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Patrick Cartelli</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Patrick Cartelli</description>
+    <title>Posts on patrick cartelli</title>
+    <link>//localhost:1313/posts/</link>
+    <description>Recent content in Posts on patrick cartelli</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 29 Feb 2024 17:38:26 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hello World</title>
-      <link>http://localhost:1313/posts/hello-world/</link>
-      <pubDate>Thu, 29 Feb 2024 17:38:26 -0500</pubDate>
-      <guid>http://localhost:1313/posts/hello-world/</guid>
-      <description>Hello World Getting my first hugo site together. remembering how to use git, terminal, and wrote this in vim! kachow!
-:)</description>
-    </item>
-    <item>
-      <title>Damon_slack_jail</title>
-      <link>http://localhost:1313/posts/damon_slack_jail/</link>
-      <pubDate>Thu, 29 Feb 2024 17:38:10 -0500</pubDate>
-      <guid>http://localhost:1313/posts/damon_slack_jail/</guid>
-      <description></description>
-    </item>
+    <language>en</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
