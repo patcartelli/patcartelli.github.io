@@ -1,3 +1,7 @@
 title = "patrick cartelli"
 theme = "hugo-Papermod"
 
+# custom theme settings here
+[params]
+  defaultTheme = "auto"
+  ShowToc = "True"
