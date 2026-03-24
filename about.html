@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Patrick Cartelli brings 15+ years of B2B SaaS design experience to early-stage startups. MVP design for technical founders. Previously Vividly, Dataminr.">
+<title>About — Studio Cartelli</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne+Tactile&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --blue: #005BEC;
+    --text: #1a1a1a;
+    --muted: #555;
+    --light: #999;
+    --border: #e8e8e8;
+    --pad: 80px;
+    --nav-h: 72px;
+  }
+
+  html, body { min-height: 100%; }
+
+  body {
+    background: white;
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: white;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--nav-h);
+    padding: 0 var(--pad);
+  }
+
+  .logo {
+    font-family: 'Syne Tactile', sans-serif;
+    font-size: 1.25rem;
+    color: var(--blue);
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  .nav-links a.active { color: var(--text); }
+
+  .page { padding: var(--pad); }
+
+  .hero {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    margin-bottom: 56px;
+  }
+
+  .headshot-placeholder {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background: #e0e8ff;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: var(--blue);
+    text-align: center;
+    line-height: 1.4;
+    border: 2px dashed #b3caff;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin-bottom: 8px;
+  }
+
+  .hero-text .subhead {
+    font-size: 1rem;
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 65fr 35fr;
+    gap: 64px;
+    align-items: start;
+  }
+
+  /* LEFT */
+  p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 16px;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  .how-list {
+    list-style: none;
+    margin: 12px 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .how-item { display: flex; gap: 12px; align-items: baseline; }
+
+  .how-bullet {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--blue);
+    flex-shrink: 0;
+    margin-top: 8px;
+  }
+
+  .how-item-text {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: #333;
+    font-weight: 500;
+  }
+
+  /* RIGHT */
+  .section-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--blue);
+    margin-bottom: 14px;
+  }
+
+  /* CLIENTS */
+  .clients {
+    margin-bottom: 40px;
+  }
+
+  .client-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .client-link {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .client-link:hover { color: var(--blue); }
+
+  /* EXPERIENCE */
+  .exp-list {
+    list-style: none;
+    border-top: 1px solid var(--border);
+    margin-bottom: 48px;
+  }
+
+  .exp-item {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .exp-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 2px;
+  }
+
+  .exp-company {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .exp-year {
+    font-size: 0.75rem;
+    color: var(--light);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .exp-role {
+    font-size: 0.8125rem;
+    color: var(--muted);
+    margin-bottom: 3px;
+  }
+
+  .exp-outcome {
+    font-size: 0.75rem;
+    color: var(--blue);
+    line-height: 1.4;
+  }
+
+  /* CTA */
+  .cta-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--blue);
+    margin-bottom: 10px;
+  }
+
+  .cta-text {
+    font-size: 0.9375rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    background: var(--blue);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: opacity 0.15s;
+  }
+
+  .cta-button:hover { opacity: 0.88; }
+
+  @media (max-width: 860px) {
+    :root { --pad: 24px; }
+    nav { padding: 0 24px; }
+    .nav-links { gap: 20px; }
+    .hero { margin-bottom: 40px; }
+    .headshot-placeholder { width: 72px; height: 72px; }
+    .two-col { grid-template-columns: 1fr; gap: 48px; }
+  }
+
+</style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">studio cartelli</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="about.html" class="active" aria-current="page">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+
+    <div class="hero">
+      <div class="headshot-placeholder">your<br>photo</div>
+      <div class="hero-text">
+        <h1>Hi, I'm Patrick Cartelli</h1>
+        <p class="subhead">Product Designer · MVP Design for Technical Founders · 15+ Years B2B SaaS</p>
+      </div>
+    </div>
+
+    <div class="two-col">
+
+      <div class="col-main">
+        <p>I started Studio Cartelli because I kept seeing the same pattern: talented founders with validated ideas and real market opportunity, stuck between overpriced agencies and inexperienced freelancers. They didn't need a rebrand or a full-service team. <strong>They needed focused, strategic design expertise to get their MVP shipped.</strong></p>
+
+        <p>I've spent 15+ years designing B2B SaaS products at companies like Vividly and Dataminr. My approach is simple: research before I touch Figma, <strong>solutions that don't make users think</strong>, and developer-ready files your engineers can actually use.</p>
+
+        <p>Outside of design, I've spent years embedded in music and photography: making things, building communities, staying close to what moves people. There's something about discovering an artist through a community instead of an algorithm that shapes how I think about building products. The best ones bring people together.</p>
+      </div>
+
+      <div class="col-side">
+
+        <div class="clients">
+          <div class="section-label">Recent clients</div>
+          <div class="client-list">
+            <a href="https://www.gruntledleadership.com" target="_blank" rel="noopener" class="client-link">-&gt; Gruntled Leadership</a>
+            <a href="https://theproper.group" target="_blank" rel="noopener" class="client-link">-&gt; The Proper Group</a>
+          </div>
+        </div>
+
+        <div class="section-label">Experience</div>
+        <ul class="exp-list">
+          <li class="exp-item">
+            <div class="exp-top">
+              <span class="exp-company">Vividly</span>
+              <span class="exp-year">2023–2025</span>
+            </div>
+            <div class="exp-role">Senior Product Designer · Enterprise Financial Analytics</div>
+            <div class="exp-outcome">1,500+ component system · 46,855+ instances · 30% fewer support tickets</div>
+          </li>
+          <li class="exp-item">
+            <div class="exp-top">
+              <span class="exp-company">Sparkhire</span>
+              <span class="exp-year">2023</span>
+            </div>
+            <div class="exp-role">Contract · Video Interview Platform</div>
+            <div class="exp-outcome">First design system · 30% less repetitive work</div>
+          </li>
+          <li class="exp-item">
+            <div class="exp-top">
+              <span class="exp-company">Innodata</span>
+              <span class="exp-year">2023</span>
+            </div>
+            <div class="exp-role">Contract · Medical Data Analysis</div>
+            <div class="exp-outcome">Document processing cut from 8+ hours to under 2</div>
+          </li>
+          <li class="exp-item">
+            <div class="exp-top">
+              <span class="exp-company">Dataminr</span>
+              <span class="exp-year">2020–2022</span>
+            </div>
+            <div class="exp-role">Senior Product Designer · Security Intelligence</div>
+            <div class="exp-outcome">20% alert noise reduction · 65% faster config · 100,000+ users</div>
+          </li>
+          <li class="exp-item">
+            <div class="exp-top">
+              <span class="exp-company">Gympass</span>
+              <span class="exp-year">2019</span>
+            </div>
+            <div class="exp-role">Product Designer · Fitness and Wellness</div>
+            <div class="exp-outcome">$450K savings opportunity across 2.3M check-ins</div>
+          </li>
+          <li class="exp-item">
+            <div class="exp-top">
+              <span class="exp-company">Signafire</span>
+              <span class="exp-year">2018–2019</span>
+            </div>
+            <div class="exp-role">Product Designer · Automotive Analytics</div>
+            <div class="exp-outcome">End-to-end design for data collection workflows and custom alerting</div>
+          </li>
+          <li class="exp-item">
+            <div class="exp-top">
+              <span class="exp-company">W. W. Norton &amp; Co.</span>
+              <span class="exp-year">2010–2018</span>
+            </div>
+            <div class="exp-role">UX Designer · Publishing</div>
+            <div class="exp-outcome">LMS adopted by multiple universities</div>
+          </li>
+        </ul>
+
+        <div class="cta-label">Let's work together</div>
+        <p class="cta-text">Ready to discuss your MVP? Schedule a free 30-minute consultation to talk through your product vision, timeline, and goals.</p>
+        <a href="mailto:ciao@studiocartelli.com" class="cta-button">Schedule a Free Call</a>
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
