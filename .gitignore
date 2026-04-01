@@ -28,3 +28,7 @@ Temporary Items
 *.swp
 *.swo
 *~
+.worktrees/
+
+# Brainstorm session files
+.superpowers/

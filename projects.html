@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Studio Cartelli — Selected projects in enterprise B2B SaaS product design.">
+  <title>Projects — Studio Cartelli</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne+Tactile&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --blue: #005BEC;
+      --text: #1a1a1a;
+      --muted: #555;
+      --light: #999;
+      --border: #e8e8e8;
+      --pad: 80px;
+      --nav-h: 72px;
+    }
+
+    html, body { min-height: 100%; }
+
+    body {
+      background: white;
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: var(--nav-h);
+      padding: 0 var(--pad);
+    }
+
+    .logo {
+      font-family: 'Syne Tactile', sans-serif;
+      font-size: 1.25rem;
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .nav-links a.active { color: var(--text); }
+
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: var(--pad);
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--blue);
+      margin-bottom: 14px;
+    }
+
+    .card-list {
+      border-top: 1px solid var(--border);
+    }
+
+    .card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+
+    .card:hover {
+      background: #f5f8ff;
+    }
+
+    .card-client {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--blue);
+      margin-bottom: 6px;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .card-problem {
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .card-outcomes {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-top: 10px;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--blue);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 860px) {
+      :root { --pad: 24px; }
+      .nav-links { gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <nav aria-label="Site navigation">
+    <a href="index.html" class="logo">studio cartelli</a>
+    <ul class="nav-links">
+      <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <main>
+  <div class="content">
+    <div class="section-label">Projects</div>
+    <div class="card-list">
+
+      <a href="precision-alert-monitoring.html" class="card">
+        <div class="card-client">Dataminr</div>
+        <div class="card-title">Precision Alert Monitoring</div>
+        <div class="card-problem">Rigid alert configs forced 100,000+ security analysts to build workarounds, creating noise and missed threats.</div>
+        <div class="card-outcomes">20% less noise · 65% faster config · 45% fewer tickets</div>
+      </a>
+
+      <a href="mission-critical-trust.html" class="card">
+        <div class="card-client">Dataminr</div>
+        <div class="card-title">Mission-Critical Trust</div>
+        <div class="card-problem">Security managers couldn't trust what the platform delivered: no preview, no visibility, no verification.</div>
+        <div class="card-outcomes">250,000+ analysts · 40% adoption increase · 10,000+ accounts unblocked</div>
+      </a>
+
+      <a href="strategic-reporting.html" class="card">
+        <div class="card-client">Vividly</div>
+        <div class="card-title">Strategic Reporting at Scale</div>
+        <div class="card-problem">CPG finance teams were exporting data daily because the platform couldn't support basic analysis.</div>
+        <div class="card-outcomes">Daily exports dropped to as-needed · 100% beta acceptance · 500 products, 800+ customers at under 2s</div>
+      </a>
+
+      <a href="check-in-problem.html" class="card">
+        <div class="card-client">Gympass</div>
+        <div class="card-title">The Check-In Problem</div>
+        <div class="card-problem">Users weren't checking in, costing six figures annually, but the assumption of user forgetfulness was wrong.</div>
+        <div class="card-outcomes">First baseline metrics established · Phased strategy addressed root causes · Framework guided COVID reopening</div>
+      </a>
+
+    </div>
+  </div>
+  </main>
+</body>
+</html>
