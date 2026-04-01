@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Precision Alert Monitoring — Studio Cartelli case study. 20% alert noise reduction, 65% faster configuration for 100,000+ security analysts.">
+  <title>Precision Alert Monitoring — Studio Cartelli</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne+Tactile&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --blue: #005BEC;
+      --text: #1a1a1a;
+      --muted: #555;
+      --light: #999;
+      --border: #e8e8e8;
+      --pad: 80px;
+      --nav-h: 72px;
+    }
+
+    html, body { min-height: 100%; }
+
+    body {
+      background: white;
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: white;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: var(--nav-h);
+      padding: 0 var(--pad);
+    }
+
+    .logo {
+      font-family: 'Syne Tactile', sans-serif;
+      font-size: 1.25rem;
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .nav-links a.active { color: var(--text); }
+
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: var(--pad);
+    }
+
+    .back-link {
+      display: inline-block;
+      font-size: 0.875rem;
+      color: var(--muted);
+      text-decoration: none;
+      margin-bottom: 40px;
+    }
+
+    .back-link:hover { color: var(--blue); }
+
+    h1 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    .client-label {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-top: 4px;
+      margin-bottom: 48px;
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--blue);
+      margin-bottom: 14px;
+    }
+
+    .section-block { margin-top: 40px; }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    .outcome-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .outcome-list li {
+      font-size: 0.9375rem;
+      line-height: 1.5;
+      color: #333;
+      padding-left: 16px;
+      position: relative;
+    }
+
+    .outcome-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--blue);
+    }
+
+    .bottom-cta {
+      margin-top: 56px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .bottom-cta a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    .bottom-cta a:hover { text-decoration: underline; }
+
+    a:focus-visible {
+      outline: 2px solid var(--blue);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 860px) {
+      :root { --pad: 24px; }
+      .nav-links { gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <nav aria-label="Site navigation">
+    <a href="index.html" class="logo">studio cartelli</a>
+    <ul class="nav-links">
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <main>
+  <div class="content">
+    <a href="projects.html" class="back-link">← Back to Projects</a>
+
+    <h1>Precision Alert Monitoring</h1>
+    <p class="client-label">Dataminr</p>
+
+    <div class="section-block">
+      <div class="section-label">Problem</div>
+      <p>100,000+ security analysts were spending 3–4 hours every week manually reconfiguring alert coverage. The platform used fixed radius settings — every alert type shared the same geographic boundary, so analysts received noise from irrelevant areas and missed threats near assets that mattered. The workarounds were everywhere: duplicate alerts, quarterly manual resets, support tickets for configurations the product should have handled.</p>
+      <p>An acquisition-driven pivot threatened to make it worse. Stakeholders wanted to change product direction without evidence.</p>
+    </div>
+
+    <div class="section-block">
+      <div class="section-label">Insight</div>
+      <p>Users don't think in radius circles. They think in proximity to assets. The moment the frame shifted from geometric coverage to contextual coverage, the right product direction became clear. Research evidence stopped the acquisition pivot and redirected 18–24 months of potential development waste.</p>
+    </div>
+
+    <div class="section-block">
+      <div class="section-label">Outcome</div>
+      <ul class="outcome-list">
+        <li>20% reduction in alert noise</li>
+        <li>65% reduction in configuration time — from 3–4 hours to 1–1.5 hours weekly</li>
+        <li>50% fewer duplicate workarounds</li>
+        <li>90% elimination of quarterly manual resets</li>
+        <li>45% drop in support tickets, 40% increase in adoption</li>
+        <li>RFP differentiator for 10,000+ accounts</li>
+      </ul>
+    </div>
+
+    <p class="bottom-cta">Working on something similar? <a href="mailto:ciao@studiocartelli.com">Get in touch.</a></p>
+  </div>
+  </main>
+</body>
+</html>
