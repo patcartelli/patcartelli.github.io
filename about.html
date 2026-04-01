@@ -66,6 +66,11 @@
 
   .page { padding: var(--pad); }
 
+  .content {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
   .hero {
     display: flex;
     align-items: flex-start;
@@ -114,7 +119,7 @@
   /* LEFT */
   p {
     font-size: 1rem;
-    line-height: 1.7;
+    line-height: 1.5;
     color: #333;
     margin-bottom: 16px;
   }
@@ -269,16 +274,17 @@
 </head>
 <body>
 
-  <nav>
+  <nav aria-label="Site navigation">
     <a href="index.html" class="logo">studio cartelli</a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="work.html">Work</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="services.html">Services</a></li>
       <li><a href="about.html" class="active" aria-current="page">About</a></li>
     </ul>
   </nav>
 
   <div class="page">
+    <div class="content">
 
     <div class="hero">
       <div class="headshot-placeholder">your<br>photo</div>
@@ -373,6 +379,7 @@
         <a href="mailto:ciao@studiocartelli.com" class="cta-button">Schedule a Free Call</a>
 
       </div>
+    </div>
     </div>
   </div>
 
