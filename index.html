@@ -111,7 +111,6 @@
     .btn-primary {
       background: white;
       color: var(--blue);
-      font-family: 'Inter', sans-serif;
       font-size: 0.875rem;
       font-weight: 500;
       padding: 12px 20px;
@@ -125,7 +124,6 @@
     .btn-secondary {
       border: 1px solid rgba(255, 255, 255, 0.5);
       color: white;
-      font-family: 'Inter', sans-serif;
       font-size: 0.875rem;
       font-weight: 500;
       padding: 12px 20px;
@@ -135,6 +133,12 @@
     }
 
     .btn-secondary:hover { opacity: 0.75; }
+
+    a:focus-visible {
+      outline: 2px solid var(--blue);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
 
     .hero-right {
       width: 180px;
@@ -169,7 +173,6 @@
 
     @media (max-width: 860px) {
       :root { --pad: 24px; }
-      nav { padding: 0 24px; }
       .nav-links { gap: 20px; }
       main { margin: 0 24px 24px; padding: var(--pad); }
       .hero { flex-direction: column; gap: 24px; align-items: flex-start; }
@@ -187,7 +190,7 @@
   </style>
 </head>
 <body>
-  <nav>
+  <nav aria-label="Site navigation">
     <a href="index.html" class="logo">studio cartelli</a>
     <ul class="nav-links">
       <li><a href="projects.html">Projects</a></li>
